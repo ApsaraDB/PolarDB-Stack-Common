@@ -1,0 +1,153 @@
+apiVersion: v1
+kind: Node
+metadata:
+  annotations:
+    csi.volume.kubernetes.io/nodeid: '{"csi-polardb-fc-plugin":"r03.dbm-02","csi-polardb-puresoft-plugin":"r03.dbm-02","csi-puresoft-plugin":"r03.dbm-02"}'
+    kubeadm.alpha.kubernetes.io/cri-socket: /var/run/dockershim.sock
+    node.alpha.kubernetes.io/ttl: "0"
+    volumes.kubernetes.io/controller-managed-attach-detach: "true"
+  creationTimestamp: "2019-12-27T12:32:06Z"
+  labels:
+    aunmix-deploy-controller-node-label-test: ""
+    beta.kubernetes.io/arch: amd64
+    beta.kubernetes.io/os: linux
+    kubernetes.io/arch: amd64
+    kubernetes.io/hostname: r03.dbm-02
+    kubernetes.io/os: linux
+    node-role.kubernetes.io/master: ""
+    node.kubernetes.io/master: ""
+    node.kubernetes.io/node: ""
+    nodetype: agent
+    polarbox.azone.name: azone01
+    polarbox.cabinet.name: rack01
+    polarbox.esdb.master: ""
+    polarbox.network.admin.enable: "true"
+    polarbox.nfs.enabled: "true"
+    polarbox.rack.name: rack01
+    polarbox.region.name: region01
+    topology.csi-polardb-fc-plugin/zone: r03.dbm-02
+    topology.csi-polardb-puresoft-plugin/zone: r03.dbm-02
+    topology.csi-puresoft-plugin/zone: r03.dbm-02
+    topology.hostpath.csi/node: r03.dbm-02
+  name: r03.dbm-02
+  resourceVersion: "413051350"
+  selfLink: /api/v1/nodes/r03.dbm-02
+  uid: e481bde7-28a4-11ea-a7ba-50af7330a864
+spec:
+  podCIDR: 198.19.129.0/24
+status:
+  addresses:
+    - address: 198.19.64.2
+      type: InternalIP
+    - address: r03.dbm-02
+      type: Hostname
+  allocatable:
+    cpu: "94"
+    ephemeral-storage: "3401629089076"
+    hugepages-1Gi: "0"
+    hugepages-2Mi: 597196Mi
+    memory: 179653008Ki
+    pods: "300"
+  capacity:
+    cpu: "96"
+    ephemeral-storage: 3691003792Ki
+    hugepages-1Gi: "0"
+    hugepages-2Mi: 597196Mi
+    memory: 791784112Ki
+    pods: "300"
+  conditions:
+    - lastHeartbeatTime: "2021-02-22T09:53:23Z"
+      lastTransitionTime: "2020-07-17T03:14:48Z"
+      message: Refresh
+      reason: Refresh
+      status: "True"
+      type: NodeRefreshFlag
+    - lastHeartbeatTime: "2020-05-27T06:41:12Z"
+      lastTransitionTime: "2020-05-27T06:41:12Z"
+      message: Reset
+      reason: executed
+      status: "False"
+      type: NodePowerOperation
+    - lastHeartbeatTime: "2020-05-27T06:50:24Z"
+      lastTransitionTime: "2020-05-27T06:50:24Z"
+      message: 设置NodeMaintainStatus
+      status: "False"
+      type: NodeMaintainStatus
+    - lastHeartbeatTime: "2020-05-29T03:22:00Z"
+      lastTransitionTime: "2020-05-29T03:22:00Z"
+      status: "False"
+      type: NodeMaintainMode
+    - lastHeartbeatTime: "2021-02-22T09:47:06Z"
+      lastTransitionTime: "2020-04-17T12:37:18Z"
+      message: 172.19.64.2
+      reason: bond0
+      status: "True"
+      type: NodeClientIP
+    - lastHeartbeatTime: "2021-02-22T09:53:27Z"
+      lastTransitionTime: "2021-02-20T09:26:25Z"
+      message: bond0 StateUP
+      reason: StateUP
+      status: "False"
+      type: NodeClientNetworkUnavailable
+    - lastHeartbeatTime: "2021-02-22T09:53:23Z"
+      lastTransitionTime: "2021-02-20T09:37:19Z"
+      message: Collections online
+      reason: online
+      status: "False"
+      type: PlugInStorageUnavailable
+    - lastHeartbeatTime: "2021-02-22T09:53:16Z"
+      lastTransitionTime: "2019-12-27T07:36:57Z"
+      message: '[]'
+      reason: ipOk
+      status: "False"
+      type: NodeClientIPUnavailable
+    - lastHeartbeatTime: "2021-02-22T09:52:43Z"
+      lastTransitionTime: "2021-02-20T09:38:16Z"
+      message: kubelet has sufficient memory available
+      reason: KubeletHasSufficientMemory
+      status: "False"
+      type: MemoryPressure
+    - lastHeartbeatTime: "2021-02-22T09:52:43Z"
+      lastTransitionTime: "2021-02-20T09:38:16Z"
+      message: kubelet has no disk pressure
+      reason: KubeletHasNoDiskPressure
+      status: "False"
+      type: DiskPressure
+    - lastHeartbeatTime: "2021-02-22T09:52:43Z"
+      lastTransitionTime: "2021-02-20T09:38:16Z"
+      message: kubelet has sufficient PID available
+      reason: KubeletHasSufficientPID
+      status: "False"
+      type: PIDPressure
+    - lastHeartbeatTime: "2021-02-22T09:52:43Z"
+      lastTransitionTime: "2021-02-20T09:38:16Z"
+      message: kubelet is posting ready status
+      reason: KubeletReady
+      status: "True"
+      type: Ready
+    - lastHeartbeatTime: "2021-02-22T09:47:33Z"
+      lastTransitionTime: null
+      message: 198.18.3.14
+      reason: PowerOn
+      status: "True"
+      type: NodeOobIP
+    - lastHeartbeatTime: "2021-02-22T09:52:43Z"
+      lastTransitionTime: "2021-02-20T09:38:24Z"
+      message: '{"total_cpu_num":96,"available_cpu":"0,9-48,57-95","available_cpu_num":80,"no_db_cpu_num":16,"no_db_cpu_set":"1-8,49-56","reserve_cpu_num":2,"reserve_cpu":"0,48","ht_num":2,"socket_cpu_num":48}'
+      reason: static
+      status: "True"
+      type: NodeCpuSetAssign
+  daemonEndpoints:
+    kubeletEndpoint:
+      Port: 10250
+  nodeInfo:
+    architecture: amd64
+    bootID: cf428d4d-247b-49d5-87ae-1ce749697602
+    containerRuntimeVersion: docker://18.9.9
+    kernelVersion: 3.10.0-957.el7.x86_64
+    kubeProxyVersion: v1.14.8-aliyunPolarbox.1
+    kubeletVersion: v1.14.8-aliyunPolarbox.1
+    machineID: 9aee282366014390abfff0e7db9e26b2
+    operatingSystem: linux
+    osImage: CentOS Linux 7 (Core)
+    systemUUID: ECBF926C-8329-03E2-0010-DEBF601C5B69

@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: "2020-12-08T08:13:52Z"
+  labels:
+    app: polardb-sms-manager
+  name: polardb-sms-manager
+  namespace: kube-system
+  resourceVersion: "314158270"
+  selfLink: /api/v1/namespaces/kube-system/services/polardb-sms-manager
+  uid: 4f2ad7ca-392d-11eb-a61f-50af732f4b6f
+spec:
+  clusterIP: 127.0.0.1
+  externalTrafficPolicy: Cluster
+  ports:
+    - nodePort: 2003
+      port: 2002
+      protocol: TCP
+      targetPort: 2002
+  selector:
+    app: polardb-sms-manager
+  sessionAffinity: None
+  type: NodePort
+status:
+  loadBalancer: {}

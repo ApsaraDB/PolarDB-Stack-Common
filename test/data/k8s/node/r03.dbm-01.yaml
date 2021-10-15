@@ -1,0 +1,172 @@
+apiVersion: v1
+kind: Node
+metadata:
+  annotations:
+    csi.volume.kubernetes.io/nodeid: '{"csi-polardb-fc-plugin":"r03.dbm-01","csi-polardb-puresoft-plugin":"r03.dbm-01","csi-puresoft-plugin":"r03.dbm-01"}'
+    kubeadm.alpha.kubernetes.io/cri-socket: /var/run/dockershim.sock
+    node.alpha.kubernetes.io/ttl: "0"
+    volumes.kubernetes.io/controller-managed-attach-detach: "true"
+  creationTimestamp: "2019-12-27T04:31:12Z"
+  labels:
+    aunmix-deploy-controller-node-label-test: ""
+    beta.kubernetes.io/arch: amd64
+    beta.kubernetes.io/os: linux
+    kubernetes.io/arch: amd64
+    kubernetes.io/hostname: r03.dbm-01
+    kubernetes.io/os: linux
+    minilvs-mysql.enabled: "true"
+    node-role.kubernetes.io/master: ""
+    node.kubernetes.io/master: ""
+    node.kubernetes.io/node: ""
+    nodetype: agent
+    polarbox.azone.name: azone01
+    polarbox.cabinet.name: rack01
+    polarbox.esdb.master: ""
+    polarbox.minio.enabled: "true"
+    polarbox.nfs.enabled: "true"
+    polarbox.rack.name: rack01
+    polarbox.region.name: region01
+    topology.csi-polardb-fc-plugin/zone: r03.dbm-01
+    topology.csi-polardb-puresoft-plugin/zone: r03.dbm-01
+    topology.csi-puresoft-plugin/zone: r03.dbm-01
+    topology.hostpath.csi/node: r03.dbm-01
+  name: r03.dbm-01
+  resourceVersion: "413050019"
+  selfLink: /api/v1/nodes/r03.dbm-01
+  uid: b695fd82-2861-11ea-b6a0-50af732f4b6f
+spec:
+  podCIDR: 198.19.128.0/24
+status:
+  addresses:
+    - address: 198.19.64.1
+      type: InternalIP
+    - address: r03.dbm-01
+      type: Hostname
+  allocatable:
+    cpu: "92"
+    ephemeral-storage: "3401629089076"
+    hugepages-1Gi: "0"
+    hugepages-2Mi: 597196Mi
+    memory: 179153012Ki
+    pods: "300"
+  capacity:
+    cpu: "96"
+    ephemeral-storage: 3691003792Ki
+    hugepages-1Gi: "0"
+    hugepages-2Mi: 597196Mi
+    memory: 791784116Ki
+    pods: "300"
+  conditions:
+    - lastHeartbeatTime: "2021-02-22T09:50:55Z"
+      lastTransitionTime: "2020-07-17T03:20:30Z"
+      message: Refresh
+      reason: Refresh
+      status: "True"
+      type: NodeRefreshFlag
+    - lastHeartbeatTime: "2020-06-22T01:57:27Z"
+      lastTransitionTime: "2020-06-22T01:57:27Z"
+      status: "False"
+      type: NodeMaintainMode
+    - lastHeartbeatTime: "2021-02-22T09:46:54Z"
+      lastTransitionTime: "2020-04-17T12:37:17Z"
+      message: 172.19.64.1
+      reason: bond0
+      status: "True"
+      type: NodeClientIP
+    - lastHeartbeatTime: "2021-02-22T09:50:55Z"
+      lastTransitionTime: "2021-02-07T07:02:42Z"
+      message: Collections online
+      reason: online
+      status: "False"
+      type: PlugInStorageUnavailable
+    - lastHeartbeatTime: "2021-02-22T09:50:54Z"
+      lastTransitionTime: "2021-02-19T09:57:57Z"
+      message: bond0 StateUP
+      reason: StateUP
+      status: "False"
+      type: NodeClientNetworkUnavailable
+    - lastHeartbeatTime: "2021-02-22T09:50:40Z"
+      lastTransitionTime: "2019-12-27T07:36:57Z"
+      message: '[]'
+      reason: ipOk
+      status: "False"
+      type: NodeClientIPUnavailable
+    - lastHeartbeatTime: "2021-02-22T09:50:56Z"
+      lastTransitionTime: "2021-02-19T10:00:40Z"
+      message: kubelet has sufficient memory available
+      reason: KubeletHasSufficientMemory
+      status: "False"
+      type: MemoryPressure
+    - lastHeartbeatTime: "2021-02-22T09:50:56Z"
+      lastTransitionTime: "2021-02-19T10:00:40Z"
+      message: kubelet has no disk pressure
+      reason: KubeletHasNoDiskPressure
+      status: "False"
+      type: DiskPressure
+    - lastHeartbeatTime: "2021-02-22T09:50:56Z"
+      lastTransitionTime: "2021-02-19T10:00:40Z"
+      message: kubelet has sufficient PID available
+      reason: KubeletHasSufficientPID
+      status: "False"
+      type: PIDPressure
+    - lastHeartbeatTime: "2021-02-22T09:50:56Z"
+      lastTransitionTime: "2021-02-19T10:00:40Z"
+      message: kubelet is posting ready status
+      reason: KubeletReady
+      status: "True"
+      type: Ready
+    - lastHeartbeatTime: "2021-02-22T09:47:32Z"
+      lastTransitionTime: null
+      message: 198.18.3.12
+      reason: PowerOn
+      status: "True"
+      type: NodeOobIP
+    - lastHeartbeatTime: "2021-02-22T09:50:56Z"
+      lastTransitionTime: "2021-02-22T03:49:09Z"
+      message: '{"total_cpu_num":96,"available_cpu":"0-1,48-49","available_cpu_num":4,"no_db_cpu_num":16,"no_db_cpu_set":"2-9,50-57","reserve_cpu_num":4,"reserve_cpu":"0-1,48-49","ht_num":2,"socket_cpu_num":48}'
+      reason: static
+      status: "True"
+      type: NodeCpuSetAssign
+  daemonEndpoints:
+    kubeletEndpoint:
+      Port: 10250
+  nodeInfo:
+    architecture: amd64
+    bootID: ed5e53b0-6679-48b3-9aeb-44e1c00b1c6f
+    containerRuntimeVersion: docker://18.9.9
+    kernelVersion: 3.10.0-957.el7.x86_64
+    kubeProxyVersion: v1.14.8-aliyunPolarbox.1
+    kubeletVersion: v1.14.8-aliyunPolarbox.1
+    machineID: da95cf59bb384a639f1d9112ba4c3348
+    operatingSystem: linux
+    osImage: CentOS Linux 7 (Core)
+    systemUUID: AABF926C-B457-03E2-0010-DEBF00A35C69
+  volumesAttached:
+    - devicePath: csi-c3b0515d0a016f133efd2b658169032abce56d3c94ea1e9b175769be2d8711a6
+      name: kubernetes.io/csi/csi-polardb-fc-plugin^pv-36e00084100ee7ec9c25f90d6000001c1
+    - devicePath: csi-c303bd778626acd50e28c6d5f33eee5a844ebdbc824c6252cbd71d77c058315a
+      name: kubernetes.io/csi/csi-polardb-fc-plugin^pv-36e00084100ee7ec9c680020a000002b2
+    - devicePath: csi-c1bfee3f8125411fa93ac95a9e11e4712dd7bd47b83b4243a7e07ae744f70e9c
+      name: kubernetes.io/csi/csi-polardb-fc-plugin^pv-36e00084100ee7ec9727c490d00001f49
+    - devicePath: csi-9c46fbf0fcd030f6355351e21148e10f882c68aaf9688b4d123bfa2e5aff42a2
+      name: kubernetes.io/csi/csi-polardb-fc-plugin^pv-36e00084100ee7ec9cf3b0fbb000003e2
+    - devicePath: csi-7ebcd90499c0e89d9cb9a7e424af04ec504bac3833af4d6d21f3fea5b457d4e1
+      name: kubernetes.io/csi/csi-polardb-fc-plugin^pv-36e00084100ee7ec9727c50ec00001f4c
+    - devicePath: csi-b1b4b3734187f05d418e545a6d3bbeada6737d446422dee8947d26a71c9106c0
+      name: kubernetes.io/csi/csi-polardb-fc-plugin^pv-36e00084100ee7ec9de6e77c5000008e9
+    - devicePath: csi-971135382dc49efa3a630738d7f647bc003d93cc60326b2f22a8c778fffc4863
+      name: kubernetes.io/csi/csi-polardb-fc-plugin^pv-36e00084100ee7ec97e35b56000002218
+    - devicePath: csi-eb737c05fa0f7098d71e889764be849fb868869f577ac26035bcf54dbe2f622c
+      name: kubernetes.io/csi/csi-polardb-fc-plugin^pv-360050767088080a2680000000000678a
+    - devicePath: csi-1b5ce352d5f7678f6a8c953d1c18e053c8f89937f5ad70b45447e4ed05dbf66f
+      name: kubernetes.io/csi/csi-polardb-fc-plugin^pv-36e00084100ee7ec996acb38700003bc7
+  volumesInUse:
+    - kubernetes.io/csi/csi-polardb-fc-plugin^pv-360050767088080a2680000000000678a
+    - kubernetes.io/csi/csi-polardb-fc-plugin^pv-36e00084100ee7ec9727c490d00001f49
+    - kubernetes.io/csi/csi-polardb-fc-plugin^pv-36e00084100ee7ec9727c50ec00001f4c
+    - kubernetes.io/csi/csi-polardb-fc-plugin^pv-36e00084100ee7ec97e35b56000002218
+    - kubernetes.io/csi/csi-polardb-fc-plugin^pv-36e00084100ee7ec996acb38700003bc7
+    - kubernetes.io/csi/csi-polardb-fc-plugin^pv-36e00084100ee7ec9c25f90d6000001c1
+    - kubernetes.io/csi/csi-polardb-fc-plugin^pv-36e00084100ee7ec9c680020a000002b2
+    - kubernetes.io/csi/csi-polardb-fc-plugin^pv-36e00084100ee7ec9cf3b0fbb000003e2
+    - kubernetes.io/csi/csi-polardb-fc-plugin^pv-36e00084100ee7ec9de6e77c5000008e9
