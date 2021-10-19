@@ -3,7 +3,7 @@ module github.com/ApsaraDB/PolarDB-Stack-Common
 go 1.16
 
 require (
-	github.com/ApsaraDB/PolarDB-Stack-Workflow v1.0.0
+	github.com/ApsaraDB/PolarDB-Stack-Workflow v0.0.0-20211019042007-a94b63751067
 	github.com/bouk/monkey v1.0.1
 	github.com/emicklei/go-restful v2.15.0+incompatible
 	github.com/go-logr/logr v0.1.0
