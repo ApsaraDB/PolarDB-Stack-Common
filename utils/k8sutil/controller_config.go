@@ -28,7 +28,7 @@ import (
 	corev1 "k8s.io/api/core/v1"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	mgr "gitlab.alibaba-inc.com/polar-as/polar-common-domain/manager"
+	mgr "github.com/ApsaraDB/PolarDB-Stack-Common/manager"
 )
 
 type ControllerConfig struct {

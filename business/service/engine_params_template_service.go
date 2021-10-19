@@ -19,7 +19,7 @@ package service
 import (
 	"github.com/go-logr/logr"
 
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/business/domain"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/business/domain"
 )
 
 func NewEngineParamsTemplateService(

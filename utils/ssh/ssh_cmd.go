@@ -26,7 +26,7 @@ import (
 
 	"github.com/go-logr/logr"
 
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/utils/k8sutil"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/utils/k8sutil"
 
 	"golang.org/x/crypto/ssh"
 )

@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"time"
 
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/utils/waitutil"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/utils/waitutil"
 
 	"github.com/pkg/errors"
 	"k8s.io/apimachinery/pkg/api/resource"

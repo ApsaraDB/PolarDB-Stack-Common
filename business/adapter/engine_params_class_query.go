@@ -21,7 +21,7 @@ import (
 	"errors"
 	"fmt"
 
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/configuration"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/configuration"
 
 	"github.com/go-logr/logr"
 
@@ -30,8 +30,8 @@ import (
 	"k8s.io/apimachinery/pkg/labels"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/business/domain"
-	mgr "gitlab.alibaba-inc.com/polar-as/polar-common-domain/manager"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/business/domain"
+	mgr "github.com/ApsaraDB/PolarDB-Stack-Common/manager"
 )
 
 var modeMap = map[domain.EngineType]string{

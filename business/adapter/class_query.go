@@ -23,7 +23,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/configuration"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/configuration"
 
 	"github.com/go-logr/logr"
 
@@ -31,12 +31,12 @@ import (
 	"k8s.io/apimachinery/pkg/labels"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	mgr "gitlab.alibaba-inc.com/polar-as/polar-common-domain/manager"
+	mgr "github.com/ApsaraDB/PolarDB-Stack-Common/manager"
 
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/resource"
 
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/business/domain"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/business/domain"
 )
 
 func NewClassQuery(logger logr.Logger) *ClassQuery {

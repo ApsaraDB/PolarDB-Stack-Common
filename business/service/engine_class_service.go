@@ -17,7 +17,7 @@
 package service
 
 import (
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/business/domain"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/business/domain"
 )
 
 func NewEngineClassService(

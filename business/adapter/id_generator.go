@@ -23,15 +23,15 @@ import (
 	"strconv"
 	"sync"
 
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/configuration"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/configuration"
 
 	"github.com/go-logr/logr"
 
 	corev1 "k8s.io/api/core/v1"
 
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/define"
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/manager"
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/utils/k8sutil"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/define"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/manager"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/utils/k8sutil"
 )
 
 func NewIdGenerator(logger logr.Logger) *IdGenerator {

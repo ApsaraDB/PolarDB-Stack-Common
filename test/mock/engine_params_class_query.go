@@ -24,7 +24,7 @@ import (
 	reflect "reflect"
 
 	gomock "github.com/golang/mock/gomock"
-	domain "gitlab.alibaba-inc.com/polar-as/polar-common-domain/business/domain"
+	domain "github.com/ApsaraDB/PolarDB-Stack-Common/business/domain"
 )
 
 // MockIEngineParamsClassQuery is a mock of IEngineParamsClassQuery interface.

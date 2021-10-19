@@ -24,7 +24,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/utils/waitutil"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/utils/waitutil"
 
 	"github.com/go-logr/logr"
 

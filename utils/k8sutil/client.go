@@ -28,7 +28,7 @@ import (
 	"k8s.io/klog"
 	"sigs.k8s.io/controller-runtime/pkg/client/config"
 
-	mgr "gitlab.alibaba-inc.com/polar-as/polar-common-domain/manager"
+	mgr "github.com/ApsaraDB/PolarDB-Stack-Common/manager"
 )
 
 var ClientForTest corev1.CoreV1Interface = nil 

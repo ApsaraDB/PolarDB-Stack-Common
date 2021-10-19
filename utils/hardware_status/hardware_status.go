@@ -27,15 +27,15 @@ import (
 
 	"github.com/go-logr/logr"
 
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/utils/ssh"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/utils/ssh"
 
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/utils"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/utils"
 
 	corev1 "k8s.io/api/core/v1"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/manager"
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/utils/k8sutil"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/manager"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/utils/k8sutil"
 )
 
 type InterfaceStatus string

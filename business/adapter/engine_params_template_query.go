@@ -19,16 +19,16 @@ package adapter
 import (
 	"strings"
 
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/configuration"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/configuration"
 
 	"github.com/go-logr/logr"
 	apierrors "k8s.io/apimachinery/pkg/api/errors"
 	"sigs.k8s.io/yaml"
 
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/business/domain"
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/define"
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/utils"
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/utils/k8sutil"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/business/domain"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/define"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/utils"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/utils/k8sutil"
 )
 
 var classSuffix = map[domain.EngineType]string{

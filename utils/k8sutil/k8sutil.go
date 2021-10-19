@@ -24,13 +24,13 @@ import (
 
 	"github.com/go-logr/logr"
 
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/utils"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/utils"
 
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/define"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/define"
 
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/utils/retryutil"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/utils/retryutil"
 
 	"github.com/pkg/errors"
 	apierrors "k8s.io/apimachinery/pkg/api/errors"
@@ -45,7 +45,7 @@ import (
 	v1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/types"
 
-	mgr "gitlab.alibaba-inc.com/polar-as/polar-common-domain/manager"
+	mgr "github.com/ApsaraDB/PolarDB-Stack-Common/manager"
 )
 
 type NodeClientIP struct {

@@ -21,22 +21,22 @@ import (
 	"errors"
 	"fmt"
 
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/configuration"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/configuration"
 
 	"github.com/go-logr/logr"
 
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/utils"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/utils"
 
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/define"
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/utils/k8sutil"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/define"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/utils/k8sutil"
 
 	corev1 "k8s.io/api/core/v1"
 	apierrors "k8s.io/apimachinery/pkg/api/errors"
 	"k8s.io/apimachinery/pkg/labels"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/business/domain"
-	mgr "gitlab.alibaba-inc.com/polar-as/polar-common-domain/manager"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/business/domain"
+	mgr "github.com/ApsaraDB/PolarDB-Stack-Common/manager"
 )
 
 var modeMinorVersionMap = map[domain.EngineType]string{

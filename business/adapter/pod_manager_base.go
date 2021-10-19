@@ -22,20 +22,20 @@ import (
 	"strconv"
 	"time"
 
-	mgr "gitlab.alibaba-inc.com/polar-as/polar-common-domain/manager"
+	mgr "github.com/ApsaraDB/PolarDB-Stack-Common/manager"
 
 	apierrors "k8s.io/apimachinery/pkg/api/errors"
 
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/utils"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/utils"
 
 	"github.com/go-logr/logr"
 	"github.com/pkg/errors"
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/business/domain"
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/configuration"
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/define"
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/utils/hardware_status"
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/utils/k8sutil"
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/utils/ssh"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/business/domain"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/configuration"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/define"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/utils/hardware_status"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/utils/k8sutil"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/utils/ssh"
 	corev1 "k8s.io/api/core/v1"
 	v1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/resource"

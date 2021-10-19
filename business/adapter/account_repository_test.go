@@ -25,8 +25,8 @@ import (
 	. "github.com/bouk/monkey"
 	"github.com/pkg/errors"
 	. "github.com/smartystreets/goconvey/convey"
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/business/domain"
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/test"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/business/domain"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/test"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/klog/klogr"
 )

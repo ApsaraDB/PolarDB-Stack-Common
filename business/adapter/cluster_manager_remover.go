@@ -20,8 +20,8 @@ import (
 	"context"
 	"fmt"
 
-	standbydefine "gitlab.alibaba-inc.com/polar-as/polar-common-domain/define"
-	mgr "gitlab.alibaba-inc.com/polar-as/polar-common-domain/manager"
+	standbydefine "github.com/ApsaraDB/PolarDB-Stack-Common/define"
+	mgr "github.com/ApsaraDB/PolarDB-Stack-Common/manager"
 	appsv1 "k8s.io/api/apps/v1"
 	corev1 "k8s.io/api/core/v1"
 	apierrors "k8s.io/apimachinery/pkg/api/errors"

@@ -19,7 +19,7 @@ package service
 import (
 	"context"
 
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/business/domain"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/business/domain"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 

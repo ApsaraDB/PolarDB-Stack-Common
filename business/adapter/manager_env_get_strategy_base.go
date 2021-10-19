@@ -23,20 +23,20 @@ import (
 	"strconv"
 	"strings"
 
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/configuration"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/configuration"
 
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/utils/k8sutil"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/utils/k8sutil"
 
 	"github.com/go-logr/logr"
 
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/utils"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/utils"
 
 	"k8s.io/apimachinery/pkg/types"
 
 	"github.com/pkg/errors"
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/business/domain"
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/define"
-	mgr "gitlab.alibaba-inc.com/polar-as/polar-common-domain/manager"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/business/domain"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/define"
+	mgr "github.com/ApsaraDB/PolarDB-Stack-Common/manager"
 	v1 "k8s.io/api/core/v1"
 )
 

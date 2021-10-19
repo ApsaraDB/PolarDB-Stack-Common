@@ -23,14 +23,14 @@ import (
 
 	"github.com/go-logr/logr"
 
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/business/domain"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/business/domain"
 
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/define"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/define"
 
 	"github.com/pkg/errors"
 
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/utils/k8sutil"
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/utils/waitutil"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/utils/k8sutil"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/utils/waitutil"
 )
 
 func NewPfsdToolClient(logger logr.Logger) *PfsdToolClient {

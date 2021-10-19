@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"strings"
 
-	wfdefine "gitlab.alibaba-inc.com/polar-as/polar-wf-engine/define"
+	wfdefine "github.com/ApsaraDB/PolarDB-Stack-Workflow/define"
 )
 
 type InterruptError struct {

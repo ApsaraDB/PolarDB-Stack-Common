@@ -16,7 +16,7 @@
 
 package domain
 
-import "gitlab.alibaba-inc.com/polar-as/polar-common-domain/utils"
+import "github.com/ApsaraDB/PolarDB-Stack-Common/utils"
 
 type Account struct {
 	Account        string `json:"account"`

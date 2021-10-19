@@ -25,8 +25,8 @@ import (
 	"k8s.io/apimachinery/pkg/api/resource"
 	"sigs.k8s.io/yaml"
 
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/define"
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/utils/k8sutil"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/define"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/utils/k8sutil"
 )
 
 type SysResourceConfig struct {

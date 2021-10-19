@@ -20,12 +20,12 @@ import (
 	"context"
 	"strconv"
 
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/configuration"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/configuration"
 
 	"github.com/go-logr/logr"
 	"github.com/pkg/errors"
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/business/domain"
-	mgr "gitlab.alibaba-inc.com/polar-as/polar-common-domain/manager"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/business/domain"
+	mgr "github.com/ApsaraDB/PolarDB-Stack-Common/manager"
 	corev1 "k8s.io/api/core/v1"
 	apierrors "k8s.io/apimachinery/pkg/api/errors"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

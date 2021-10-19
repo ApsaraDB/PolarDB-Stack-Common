@@ -24,7 +24,7 @@ import (
 	reflect "reflect"
 
 	gomock "github.com/golang/mock/gomock"
-	domain "gitlab.alibaba-inc.com/polar-as/polar-common-domain/business/domain"
+	domain "github.com/ApsaraDB/PolarDB-Stack-Common/business/domain"
 )
 
 // MockIEngineParamsTemplateQuery is a mock of IEngineParamsTemplateQuery interface.

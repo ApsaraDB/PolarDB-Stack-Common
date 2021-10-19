@@ -28,17 +28,17 @@ import (
 	"strings"
 	"time"
 
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/utils/waitutil"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/utils/waitutil"
 
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/utils/k8sutil"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/utils/k8sutil"
 
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/define"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/define"
 
 	"github.com/go-logr/logr"
 	"github.com/pkg/errors"
 
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/business/domain"
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/utils/retryutil"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/business/domain"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/utils/retryutil"
 )
 
 type StorageSvcResponse struct {

@@ -24,15 +24,15 @@ import (
 	"strings"
 	"time"
 
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/utils/waitutil"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/utils/waitutil"
 
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/business/domain"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/business/domain"
 
 	"github.com/go-logr/logr"
 	"github.com/pkg/errors"
 	errors2 "k8s.io/apimachinery/pkg/api/errors"
 
-	"gitlab.alibaba-inc.com/polar-as/polar-common-domain/utils/k8sutil"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/utils/k8sutil"
 )
 
 type IEnvGetStrategy interface {
