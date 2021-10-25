@@ -1,4 +1,4 @@
-/* 
+/*
 *Copyright (c) 2019-2021, Alibaba Group Holding Limited;
 *Licensed under the Apache License, Version 2.0 (the "License");
 *you may not use this file except in compliance with the License.
@@ -12,7 +12,6 @@
 *See the License for the specific language governing permissions and
 *limitations under the License.
  */
-
 
 package adapter
 
@@ -28,14 +27,14 @@ import (
 
 	"github.com/ApsaraDB/PolarDB-Stack-Common/utils"
 
-	"github.com/go-logr/logr"
-	"github.com/pkg/errors"
 	"github.com/ApsaraDB/PolarDB-Stack-Common/business/domain"
 	"github.com/ApsaraDB/PolarDB-Stack-Common/configuration"
 	"github.com/ApsaraDB/PolarDB-Stack-Common/define"
 	"github.com/ApsaraDB/PolarDB-Stack-Common/utils/hardware_status"
 	"github.com/ApsaraDB/PolarDB-Stack-Common/utils/k8sutil"
 	"github.com/ApsaraDB/PolarDB-Stack-Common/utils/ssh"
+	"github.com/go-logr/logr"
+	"github.com/pkg/errors"
 	corev1 "k8s.io/api/core/v1"
 	v1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/resource"
@@ -442,16 +441,16 @@ func BuildPodObjectMeta(ins domain.DbIns, cluster domain.SharedStorageDbClusterB
 		Name:      podName,
 		Namespace: podNamespace,
 		Labels: map[string]string{
-			define.LabelInsType:     insType,
-			define.LabelClusterName: clusterName,
-			define.LabelDbType: "polardb",
-			define.LabelLogicCustInsName: clusterName,
-			define.LabelInsName: ins.PhysicalInsId,
-			define.LabelPvName: cluster.StorageInfo.VolumeId,
-			define.LabelInsPort: strconv.Itoa(ins.NetInfo.Port),
-			define.LabelLogicCustInsId: ins.InsId,
+			define.LabelInsType:           insType,
+			define.LabelClusterName:       clusterName,
+			define.LabelDbType:            "polardb",
+			define.LabelLogicCustInsName:  clusterName,
+			define.LabelInsName:           ins.PhysicalInsId,
+			define.LabelPvName:            cluster.StorageInfo.VolumeId,
+			define.LabelInsPort:           strconv.Itoa(ins.NetInfo.Port),
+			define.LabelLogicCustInsId:    ins.InsId,
 			define.LabelPhysicalCustInsId: ins.PhysicalInsId,
-			define.LabelInsId: ins.InsId,
+			define.LabelInsId:             ins.InsId,
 		},
 		Annotations: map[string]string{},
 	}

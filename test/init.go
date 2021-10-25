@@ -1,4 +1,4 @@
-/* 
+/*
 *Copyright (c) 2019-2021, Alibaba Group Holding Limited;
 *Licensed under the Apache License, Version 2.0 (the "License");
 *you may not use this file except in compliance with the License.
@@ -12,7 +12,6 @@
 *See the License for the specific language governing permissions and
 *limitations under the License.
  */
-
 
 package test
 
@@ -33,14 +32,14 @@ import (
 
 	"github.com/ApsaraDB/PolarDB-Stack-Common/configuration"
 
-	. "github.com/bouk/monkey"
-	"github.com/go-logr/logr"
-	. "github.com/golang/mock/gomock"
 	mgr "github.com/ApsaraDB/PolarDB-Stack-Common/manager"
 	mock "github.com/ApsaraDB/PolarDB-Stack-Common/test/mock"
 	"github.com/ApsaraDB/PolarDB-Stack-Common/utils/k8sutil"
 	"github.com/ApsaraDB/PolarDB-Stack-Common/utils/ssh"
 	wfk8sutil "github.com/ApsaraDB/PolarDB-Stack-Workflow/utils/k8sutil"
+	. "github.com/bouk/monkey"
+	"github.com/go-logr/logr"
+	. "github.com/golang/mock/gomock"
 	apicorev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"

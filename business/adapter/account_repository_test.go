@@ -1,4 +1,4 @@
-/* 
+/*
 *Copyright (c) 2019-2021, Alibaba Group Holding Limited;
 *Licensed under the Apache License, Version 2.0 (the "License");
 *you may not use this file except in compliance with the License.
@@ -13,7 +13,6 @@
 *limitations under the License.
  */
 
-
 package adapter
 
 import (
@@ -22,11 +21,11 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"sigs.k8s.io/controller-runtime/pkg/controller/controllerutil"
 
+	"github.com/ApsaraDB/PolarDB-Stack-Common/business/domain"
+	"github.com/ApsaraDB/PolarDB-Stack-Common/test"
 	. "github.com/bouk/monkey"
 	"github.com/pkg/errors"
 	. "github.com/smartystreets/goconvey/convey"
-	"github.com/ApsaraDB/PolarDB-Stack-Common/business/domain"
-	"github.com/ApsaraDB/PolarDB-Stack-Common/test"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/klog/klogr"
 )
